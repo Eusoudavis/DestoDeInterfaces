@@ -9,8 +9,10 @@ public class Main {
         taboa.insertarPrincipio(5);
         taboa.insertar(2,100);
         taboa.mostrar();
+        taboa.eliminar(2);
+        taboa.mostrar();
         System.out.println(taboa.get(2));
-        System.out.println(taboa.buscar(2));
+       // System.out.println(taboa.buscar(1));
 
 
     }

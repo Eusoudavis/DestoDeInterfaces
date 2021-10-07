@@ -30,9 +30,20 @@ public class Taboa {
         return resultado;
     }
 
+    void eliminar(int indice){
+       // Integer eliminado = null;
+        if (indice>=0 && indice< taboa.length){
+           // eliminado = taboa[indice];
+            for (int i = indice + 1; i< taboa.length; i++){
+                taboa[i - 1] = taboa[i];
+            }
+            taboa = Arrays.copyOf(taboa, taboa.length - 1);
+        }
+    }
+
     int buscar(Integer clave){
         int indice = -1;
-        for (int i = 0; i < taboa.length && indice ==-1; i++){
+        for (int i = 0; i < taboa.length; i++){
             if (taboa[i].equals(clave)){
                 indice = i;
             }else {}
